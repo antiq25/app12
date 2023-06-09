@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Spreadsheet</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+            <input type="text" id="unit-number" placeholder="Unit Number" />
+            <input type="text" id="model-number" placeholder="Model Number" />
+            <input type="text" id="serial-number" placeholder="Serial Number" />
+            <input type="text" id="filter-changed" placeholder="Filter Changed" />
+            <input type="text" id="heating-temp" placeholder="Heating Temp" />
+            <input type="text" id="cooling-temp" placeholder="Cooling Temp" />
+            <input type="text" id="inspect-hoses" placeholder="Inspect Hoses" />
+            <input type="text" id="pan-vacuumed" placeholder="Pan Vacuumed?" />
+            <input type="text" id="refrigerant-checked" placeholder="Refrigerant Checked?" />
+            <input type="text" id="serviceability-access" placeholder="Serviceability Access to Heat Pump?" />
+            <input type="text" id="notes" placeholder="Notes" />
+            <input type="text" id="filterSize" placeholder="Filter Size" />
+
+        </div>
+        <table>
+            <thead id="header-row"></thead>
+            <tbody id="spreadsheet-body"></tbody>
+        </table>
+        <button onclick="downloadCSV()">Download CSV</button>
+        <button onclick="saveSpreadsheet()">Save</button>
+        <button onclick="displaySpreadsheet()">Display</button>
+    </body>
+    <script src="script.js"></script>
+</html>

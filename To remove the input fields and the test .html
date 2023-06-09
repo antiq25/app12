@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="model-number" class="input" placeholder="Model #">
+      <label for="model-number" class="mdc-floating-label">Model #</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="serial-number" class="input" placeholder="Serial #">
+      <label for="serial-number" class="mdc-floating-label">Serial #</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="filter-changed" class="input" placeholder="Filter Changed">
+      <label for="filter-changed" class="mdc-floating-label">Filter Changed</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="heating-temp" class="input" placeholder="Heating Temp">
+      <label for="heating-temp" class="mdc-floating-label">Heating Temp</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="cooling-temp" class="input" placeholder="Cooling Temp">
+      <label for="cooling-temp" class="mdc-floating-label">Cooling Temp</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="inspect-hoses" class="input" placeholder="Inspect hoses">
+      <label for="inspect-hoses" class="mdc-floating-label">Inspect hoses</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="pan-vacuumed" class="input" placeholder="Pan Vacuumed?">
+      <label for="pan-vacuumed" class="mdc-floating-label">Pan Vacuumed?</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="refrigerant-checked" class="input" placeholder="Refrigerant Checked?">
+      <label for="refrigerant-checked" class="mdc-floating-label">Refrigerant Checked?</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="serviceability-access" class="input" placeholder="Serviceability Access to Heat Pump?">
+      <label for="serviceability-access" class="mdc-floating-label">Serviceability Access to Heat Pump?</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+  <div class="input-container">
+    <div class="mdc-text-field">
+      <input type="text" id="notes" class="input" placeholder="Notes">
+      <label for="notes" class="mdc-floating-label">Notes</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  </div>
+    <div class="btn-container">
+      <button onclick="saveSpreadsheet()">Save Spreadsheet</button>
+      <button onclick="showPrompt()">Display Spreadsheet</button>
+    </div>
+
+    <div class="prompt-container" id="prompt-container" style="display: none;">
+      <div class="prompt-overlay" id="prompt-overlay"></div>
+      <div class="prompt-box" id="prompt-box">
+        <div class="prompt-header">
+          <span class="prompt-close" onclick="hidePrompt()">&times;</span>
+          <h2>Spreadsheet Contents</h2>
+        </div>
+        <div class="prompt-body">
+          <table id="display-table">
+            <thead>
+              <tr id="display-header-row">
+                <th>Unit #</th>
+                <!-- More th elements... -->
+              </tr>
+            </thead>
+            <tbody id="display-spreadsheet-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
