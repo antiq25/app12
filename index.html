@@ -5,8 +5,9 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-      <img id="header-image" src="logo.png" alt="Image" style="max-width: 100%;">
+        
       <div id="input-container">
+        <img id="header-image" src="logo.png" alt="Image" style="max-width: 100%;">
             <input type="text" id="unit-number" placeholder="Unit Number" />
             <input type="text" id="model-number" placeholder="Model Number" />
             <input type="text" id="serial-number" placeholder="Serial Number" />
@@ -21,13 +22,16 @@
             <input type="text" id="filterSize" placeholder="Filter Size" />
           </div>
         </div>
+        <div class="button-grid">
+        <button onclick="saveSpreadsheet()">Save </button>
+        <button onclick="displaySpreadsheet()">Display </button>
+        <button onclick="downloadCSV()">Download CSV</button>
+
+    </div>
         <table>
             <thead id="header-row"></thead>
             <tbody id="spreadsheet-body"></tbody>
         </table>
-        <button onclick="downloadCSV()">Download CSV</button>
-        <button onclick="saveSpreadsheet()">Save</button>
-        <button onclick="displaySpreadsheet()">Display</button>
-    </body>
+        
     <script src="script.js"></script>
 </html>

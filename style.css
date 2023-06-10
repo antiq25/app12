@@ -48,21 +48,41 @@ table thead th, table tbody td {
     color: #fff;
 }
 
-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 
 input {
     color:white;
 
 }
+
+.button-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-grid button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-grid button:last-child {
+    margin-right: 0;
+  }
+  
+  .button-grid button:hover {
+    background-color: #6c6c6c;
+  }
+  
+  .button-grid button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  
