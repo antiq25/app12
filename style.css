@@ -9,12 +9,11 @@ body {
     margin: 0 auto; /* Centers the image horizontally */
 }
     
-
 #input-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 300px;
+    width: 100%;
     margin: 20px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -34,7 +33,7 @@ body {
 }
 
 table {
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.1);
@@ -48,14 +47,13 @@ table thead th, table tbody td {
     color: #fff;
 }
 
-
-
 input {
     color:white;
 
 }
 
 .button-grid {
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
