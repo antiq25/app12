@@ -3,9 +3,10 @@
     <head>
         <title>Simple Spreadsheet</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+    <div class="login-box">
       <div id="input-container">
         <img id="header-image" src="logo.png" alt="Image" style="max-width: 100%;">
             <input type="text" id="unit-number" placeholder="Unit Number" />
@@ -22,16 +23,16 @@
             <input type="text" id="filterSize" placeholder="Filter Size" />
           </div>
         </div>
+    </div>
         <div class="button-grid">
-        <button onclick="saveSpreadsheet()">Save </button>
-        <button onclick="displaySpreadsheet()">Display </button>
-        <button onclick="downloadCSV()">Download CSV</button>
-
+        <button class="button-grid" button onclick="saveSpreadsheet()">Save </button>
+        <button class="button-grid" button onclick="displaySpreadsheet()">Display </button>
+        <button class="button-grid" button onclick="downloadCSV()">Download CSV</button>
     </div>
         <table>
             <thead id="header-row"></thead>
             <tbody id="spreadsheet-body"></tbody>
         </table>
-        
+        </body>
     <script src="script.js"></script>
 </html>
